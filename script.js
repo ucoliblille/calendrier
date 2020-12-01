@@ -88,7 +88,9 @@ function ouvrirModal(element, id){
     if(element !== undefined){
         let modal = document.getElementById("modal");
         let p = document.getElementById("texteModale");
+		let titre = document.getElementById("titreModale");
         modal.style.display = "block";
+        titre.innerText = jours[id - 1].titre;
         p.innerText = jours[id - 1].texte;
     }
 }
