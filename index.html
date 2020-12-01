@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title>UCL Lille - Calendrier de l'avant 2021</title>
+    <meta name="description" content="Calendrier de l'avant 2021 par le groupe de l'Union communiste libertaire de Lille">
+    <script src="jours.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="snow.css">
+    <link rel="stylesheet" href="snow-portable.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="twitter:title" content="UCL - Union communiste libertaire Lille -">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:description" content="Anticapitalisme, autogestion.">
+    <meta name="twitter:dnt" content="on">
+    <meta name="twitter:url" content="http://www.unioncommunistelibertaire.org/">
+    <meta name="twitter:image" content="https://www.unioncommunistelibertaire.org/local/cache-vignettes/L506xH253/13bae3b15444903c82a292e15f8202-eea92.png?1584823584">
+</head>
+<body onload="initialiser()">
+<div class="conteneur">
+    <div class="en-tete">
+        <h1 class="titre-principal">Calendrier de l'<span class="titre-secondaire">av</span>an<span
+                class="titre-secondaire">t 202</span>1</h1>
+        <div style="white-space:nowrap">
+            <label for="theme">thème: </label>
+            <select id="theme" name="theme" onchange="changerTheme()">
+                <option value="neige" selected>neige</option>
+                <option value="ucl">ucl</option>
+                <option value="kropotkin">santa Kropotkin</option>
+                <option value="marx">merry christmarx</option>
+                <option value="aucun">aucun</option>
+            </select>
+            <button onclick="reinitialiser()">réinitialiser</button>
+        </div>
+    </div>
+    <div class="conteneur-jours">
+        <div id="1" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>1</span></div>
+        </div>
+        <div id="2" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>2</span></div>
+        </div>
+        <div id="3" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>3</span></div>
+        </div>
+        <div id="4" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>4</span></div>
+        </div>
+        <div id="5" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>5</span></div>
+        </div>
+        <div id="6" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>6</span></div>
+        </div>
+        <div id="7" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>7</span></div>
+        </div>
+        <div id="8" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>8</span></div>
+        </div>
+        <div id="9" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>9</span></div>
+        </div>
+        <div id="10" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>10</span></div>
+        </div>
+        <div id="11" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>11</span></div>
+        </div>
+        <div id="12" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>12</span></div>
+        </div>
+        <div id="13" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>13</span></div>
+        </div>
+        <div id="14" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>14</span></div>
+        </div>
+        <div id="15" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>15</span></div></div>
+        <div id="16" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>16</span></div>
+        </div>
+        <div id="17" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>17</span></div>
+        </div>
+        <div id="18" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>18</span></div>
+        </div>
+        <div id="19" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>19</span></div>
+        </div>
+        <div id="20" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>20</span></div>
+        </div>
+        <div id="21" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>21</span></div>
+        </div>
+        <div id="22" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>22</span></div>
+        </div>
+        <div id="23" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>23</span></div>
+        </div>
+        <div id="24" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>24</span></div>
+        </div>
+        <div id="25" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>25</span></div>
+        </div>
+        <div id="26" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>26</span></div>
+        </div>
+        <div id="27" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>27</span></div>
+        </div>
+        <div id="28" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>28</span></div>
+        </div>
+        <div id="29" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>29</span></div>
+        </div>
+        <div id="30" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>30</span></div>
+        </div>
+        <div id="31" onClick="affichageModal(this)" class="jour pointilles">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div><span>31</span></div>
+        </div>
+    </div>
+</div>
+<div class="snowfall">
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+    <div class="snowflake"></div>
+</div>
+</body>
+</html>
