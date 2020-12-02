@@ -176,4 +176,8 @@ body {
     .jour{
         margin: 10px 7px;
     }
+    #texteModale{
+        overflow-y: scroll;
+        line-height: normal;
+    }
 }
