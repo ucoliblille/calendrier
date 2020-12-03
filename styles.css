@@ -40,7 +40,7 @@ body {
     background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 #texteModale{
-    overflow-y: scroll;
+    overflow-y: auto;
     line-height: 1.4;
 }
 
