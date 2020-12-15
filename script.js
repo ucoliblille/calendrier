@@ -51,7 +51,7 @@ function affichageModal(element) {
         // les mois sont compris entre 0 et 11
         if(new Date().getMonth() === 11){
             if(bloquageParCalendrier(id)){
-				if(jours[id].texte.length === 0){
+				if(jours[id - 1].texte.length === 0){
 					ouvrirModal(element, id, false);
 				} else {
 					ouvrirJour(element, id);
