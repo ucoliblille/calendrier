@@ -51,8 +51,12 @@ function affichageModal(element) {
         // les mois sont compris entre 0 et 11
         if(new Date().getMonth() === 11){
             if(bloquageParCalendrier(id)){
-                ouvrirJour(element, id);
-                ouvrirModal(element, id);
+				if(jours[id].texte.length === 0){
+					ouvrirModal(element, id, false);
+				} else {
+					ouvrirJour(element, id);
+					ouvrirModal(element, id);
+				}
             }
         } else {
             if(bloquageBasique(id)){
@@ -84,14 +88,19 @@ function ouvrirJour(element, id){
         }
     }
 }
-function ouvrirModal(element, id){
+
+function ouvrirModal(element, id, textePret = true){
     if(element !== undefined){
         let modal = document.getElementById("modal");
         let p = document.getElementById("texteModale");
 		let titre = document.getElementById("titreModale");
         modal.style.display = "block";
         titre.innerText = jours[id - 1].titre;
-        p.innerText = jours[id - 1].texte;
+		if(textePret){
+			p.innerText = jours[id - 1].texte;
+		} else {
+			p.innerText = "Le texte n'est pas encore prêt, mais on fait au plus vite (aux alentours de 18h)";
+		}
     }
 }
 function getListeJours() {
