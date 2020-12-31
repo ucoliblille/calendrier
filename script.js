@@ -59,10 +59,8 @@ function affichageModal(element) {
 				}
             }
         } else {
-            if(bloquageBasique(id)){
-                ouvrirJour(element, id);
-                ouvrirModal(element, id);
-            }
+			ouvrirJour(element, id);
+			ouvrirModal(element, id);
         }
     }
 }
